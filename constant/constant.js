@@ -1,15 +1,23 @@
-// Common Error Message
+// Common Error Message.
 const ERROR_MESSAGE = {
     INVALID_INPUT: 'Invalid Input',
-    ITEM_NOT_FOUND: 'Item Not Found'
+    ITEM_NOT_FOUND: 'Item Not Found',
+    ACCESS_DENIED: 'Access Denied',
+    INTERNAL_SERVER_ERROR: 'Internal Server Error'
 };
 
-const DUMMY_ITEM = [
-    { id: '1', title: 'Have to go market', status: 'done' },
-    { id: '2', title: 'Have to complete home work', status: 'done' },
-    { id: '3', title: 'Have to watch match', status: 'pending' }
-];
+// Dummy user for jwt token. 
+const DUMMY_USER = {
+    id: 'u123',
+    name: 'dummy',
+    email: 'dummy123@gmail.com'
+};
+
+// Secret key for jwt token.
+const SECRET_KEY = 'SECRET_KEY';
 
 module.exports = {
-    ERROR_MESSAGE
+    DUMMY_USER,
+    ERROR_MESSAGE,
+    SECRET_KEY
 };
